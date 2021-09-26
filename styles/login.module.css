@@ -1,0 +1,78 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  margin: 150px 100px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  width: 50%;
+  min-height: 50%;
+  border: 1.5px solid rgb(201, 76, 76);
+}
+.content {
+  display: block;
+  margin: 30px auto;
+  margin-left: 200px;
+}
+.heading {
+  color: white;
+  margin-top: -1.2px;
+  font-size: x-large;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+}
+.paragraph {
+  color: rgb(206, 203, 203);
+  font-size: small;
+  font-weight: 200;
+  width: 69%;
+  margin-top: -4px;
+}
+.btn {
+  background-color: #1da1f2;
+  display: block;
+  width: 69%;
+  margin-top: 30px;
+  padding: 10px 0;
+  padding-bottom: 15px;
+  color: rgb(218, 216, 216);
+  border-radius: 4px;
+  text-align: center;
+  font-size: small;
+  font-weight: 200;
+  
+}
+.btn:hover{
+  background-color: rgb(0, 140, 255);
+  font-weight: 700;
+}
+.btn i{
+  font-size: 20px;
+  margin-right: 20px;
+}
+.contentFooter{
+    color: rgb(139, 139, 139);
+    font-size: 8px;
+    margin-left: 39px;
+    padding-top: 35px;
+}
+.span{
+    text-decoration: underline;
+    text-decoration-color: rgb(87, 85, 85);
+}
+.span:hover{
+    color:whitesmoke;
+    cursor: pointer;
+    text-decoration-color: white;
+}

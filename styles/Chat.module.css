@@ -1,0 +1,118 @@
+.side_nav{
+    height: 100%;
+    width: 248px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    padding: 3.5rem 4.5rem;
+    width: 18%;
+    color: white;
+    background-color: #404040;
+    border: 1px solid;
+    border-right-color: rgb(201, 76, 76);
+  }
+  
+  .paragraph {
+    font-weight: 500;
+    margin: 7px;
+    margin-top: 5px;
+    width: 120px;
+  }
+  
+  .head1 {
+    color: white;
+    margin: -73px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    padding: 7px;
+    padding-left: 80px;
+    border-radius: 4px;
+    width: 169px;
+  }
+  .head1:hover{
+    cursor: pointer;
+  }
+  .head2 {
+    color: white;
+    background-color: #EC0B43;
+    margin: -73px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    padding: 7px;
+    padding-left: 55px;
+    border-radius: 4px;
+    width: 190px;
+  }
+  .head2 i{
+    margin-right: 20px;
+  }
+  .head2:hover{
+    cursor: pointer;
+  }
+  .head3 {
+    color: white;
+    margin-top: 190px;
+    padding: 7px;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .head3 i{
+    margin-right: 10px;
+    font-weight: 800;
+  }
+  .head3:hover{
+    cursor: pointer;
+  }
+  .container {
+    margin: 50px;
+    margin-left: 300px;
+  }
+  .heading {
+      color: white;
+      font-weight: 900;
+      font-size: 40px;
+    }
+  .sub {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+  }
+  .text {
+    color: #919191;
+    font-weight: 200;
+    font-size: 12px;
+    width: 24em;
+    position: absolute;
+  }
+  .events{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 33px auto;
+    grid-gap: 20px 20px;
+  }
+  
+  .imageFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
+  
+  .imageparagraph1{
+    color: #919191;
+    font-size: small;
+  }
+  .imageparagraph2{
+    color: #919191;
+    font-size: small;
+    padding-left: 2px;
+  }
+  .imageparagraph3{
+    color: #919191;
+    font-size: small;
+    padding-left: 2px;
+  }

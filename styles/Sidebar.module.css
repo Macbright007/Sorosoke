@@ -1,0 +1,43 @@
+.container {
+    min-height: 100vh;
+    padding: 3.5rem 4.5rem;
+    width: 20%;
+    color: white;
+    background-color: #404040;
+    border: 1px solid;
+    border-right-color: rgb(201, 76, 76);
+  }
+
+  .paragraph {
+    font-weight: 500;
+    margin: 7px;
+    margin-top: 5px;
+  }
+
+  .head1 {
+    color: white;
+    background-color: red;
+    margin: -73px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    padding: 7px;
+    padding-left: 80px;
+    border-radius: 4px;
+    width: 169px;
+  }
+  .head2 {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    padding: 7px;
+    border-radius: 4px;
+    width: 200px;
+  }
+  .head3 {
+    color: white;
+    margin-top: 7px;
+    padding: 7px;
+    border-radius: 4px;
+    width: 200px;
+  }
+
