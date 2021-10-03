@@ -1,28 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/main.module.css";
-import Link from "next/link";
+import Layout from "../../components/Layout";
 
 const main = () => {
   return (
-    <div>
-      <div className={styles.side_nav}>
-        <Image
-          src="/images/Ellipse.png"
-          alt="Vercel Logo"
-          width={5500}
-          height={5500}
-        />
-        <p className={styles.paragraph}>Hi! Esther 👋</p>
-
-        <p className={styles.head1}>Feed</p>
-        <Link href="/heroSection/chat">
-          <a className={styles.head2}><i class="bi bi-messenger"></i> Chat Rooms</a>
-        </Link>
-
-        <p className={styles.head3}><i class="bi bi-box-arrow-right"></i>Log Out</p>
-      </div>
-
+    <Layout>
       <div className={styles.container}>
         <h1 className={styles.heading}>Feed</h1>
         <div className={styles.sub}>
@@ -35,87 +18,38 @@ const main = () => {
         </div>
 
         <div className={styles.events}>
-          <div>
-            <Image
-              src="/images/Rect.png"
-              alt="Vercel Logo"
-              width={255}
-              height={167}
-            />
-            <div className={styles.imageFooter}>
-                <div className={styles.imagetext} >
+          {
+            [1, 2, 3, 4, 6, 7, 8, 9, 5, 7, 8, 2].map((item, key) => {
+              return (
+                <div className={styles.event_card} key={key}>
                   <Image
-                    src="/images/Ellipse1.png"
+                    src="/images/Rect.png"
                     alt="Vercel Logo"
-                    width={23}
-                    height={23}
+                    width={255}
+                    height={167}
                   />
-                  <p className={styles.imageparagraph1}>Eniduro Shade Thrower</p>
+                  <div className={styles.event_card_footer}>
+                    <div className={styles.footer_left} >
+                      <Image
+                        src="/images/Ellipse1.png"
+                        alt="Vercel Logo"
+                        width={23}
+                        height={23}
+                      />
+                      <p>Eniduro Shade Thrower</p>
+                    </div>
+                    <div className={styles.footer_right}>
+                      <p>2hr Ago</p>
+                    </div>
                   </div>
-                  <div className={styles.imagetext2}>
-                    <p className={styles.imageparagraph2}>2hr Ago</p>
-                  </div>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="/images/Rect2.png"
-              alt="Vercel Logo"
-              width={255}
-              height={167}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/Rect3.png"
-              alt="Vercel Logo"
-              width={255}
-              height={167}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/Rect4.png"
-              alt="Vercel Logo"
-              width={255}
-              height={167}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/Rect5.png"
-              alt="Vercel Logo"
-              width={255}
-              height={167}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/Rect6.png"
-              alt="Vercel Logo"
-              width={255}
-              height={167}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/Rect7.png"
-              alt="Vercel Logo"
-              width={255}
-              height={167}
-            />
-          </div>
-          <div>
-            <Image
-              src="/images/Rect8.png"
-              alt="Vercel Logo"
-              width={255}
-              height={167}
-            />
-          </div>
+                </div>
+              )
+            })
+          }
+
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

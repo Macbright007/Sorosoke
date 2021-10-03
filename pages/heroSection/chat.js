@@ -2,26 +2,10 @@ import React from "react";
 import Image from "next/image";
 import styles from "../../styles/Chat.module.css";
 import Link from "next/link";
-
+import Layout from '../../components/Layout'
 const main = () => {
   return (
-    <div>
-      <div className={styles.side_nav}>
-        <Image
-          src="/images/Ellipse.png"
-          alt="Vercel Logo"
-          width={5500}
-          height={5500}
-        />
-        <p className={styles.paragraph}>Hi! Esther</p>
-
-        <Link href="/heroSection/main">
-          <p className={styles.head1}>Feed</p>
-        </Link>
-        <p className={styles.head2}><i class="bi bi-messenger"></i>Chat Rooms</p>
-        <p className={styles.head3}><i class="bi bi-box-arrow-right"></i>Log Out</p>
-      </div>
-
+    <Layout>
       <div className={styles.container}>
         <h1 className={styles.heading}>Chat Rooms</h1>
         <div className={styles.sub}>
@@ -31,7 +15,7 @@ const main = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 
